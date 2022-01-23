@@ -23,4 +23,11 @@ public class SwitchArray {
             System.out.println(number);
         }
     }
+
+    public static String[] swapStr(String[] array, int source, int dest) {
+        String buffer = array[source];
+        array[source] = array[dest];
+        array[dest] = buffer;
+        return array;
+    }
 }
